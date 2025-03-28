@@ -1,4 +1,4 @@
-## #Saskatoon": counting IPs.
+## "Saskatoon": counting IPs.
 
 ### Problem
 
