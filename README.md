@@ -2,6 +2,7 @@
 
 List of notes:
 
+1. ["Salta": Docker container won't start.](notes/docker_container_wont_start.md) [Container] [TODO]
 1. ["Manhattan": can't write data into database](notes/cant_write_data_into_database.md) [Disk] [Systemd] [Postgres] [Database]
 1. ["Tokyo": can't serve web file](notes/cant_serve_web_file.md) [iptables] [File Permissions]
 1. ["Cape Town": Borked Nginx](notes/borked_nginx.md) [Nginx] [Max Open File Descriptor Limits]
