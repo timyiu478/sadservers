@@ -6,4 +6,6 @@ https://sadservers.com/scenario/tokamachi
 
 ### Solution
 
-use `flock` and `mkfifo`
+TDLR: use `flock` and `mkfifo`.
+
+1. 
