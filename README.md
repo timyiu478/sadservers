@@ -11,5 +11,6 @@ List of notes:
 1. ["Gitega": Find the Bad Git Commit](notes/troubleshoot_a_named_pipe.md) [Pipe] [Unix-like Shell] [TODO]
 1. ["Saint John": what is writing to this log file?](notes/what_is_writing_to_this_log_file.md) [List Of Open File]
 1. ["Saskatoon": counting IPs](notes/counting_ips.md) [Texting Processing]
+1. ["Apia": Needle in a Haystack](notes/needle_in_a_haystack.md) [Diff] [Checksum]
 1. ["Lhasa": Easy Math](notes/easy_math.md) [Scripting]
 1. ["Bata": Find in /proc](notes/find_in_proc.md) [Text Processing]
