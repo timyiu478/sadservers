@@ -3,7 +3,8 @@
 List of notes:
 
 
-1. ["Bilbao": Basic Kubernetes Problems](basic_k8s_problem.md) [Kubernetes]
+1. ["Bilbao": Basic Kubernetes Problems](notes/basic_k8s_problem.md) [Kubernetes] [Scheduling]
+1. ["Bucharest": Connecting to Postgres](notes/connecting_to_postgres.md) [Database Connection]
 1. ["Geneva": Renew an SSL Certificate](notes/renew_ssl_cert.md) [SSL] [Reverse Proxy]
 1. ["Taipei": Come a-knocking](notes/come_a_knock.md) [Port Knocking]
 1. ["Saint John": what is writing to this log file?](notes/what_is_writing_to_this_log_file.md) [List Of Open File]
