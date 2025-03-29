@@ -6,3 +6,4 @@ https://sadservers.com/scenario/gitega
 
 ### Solution
 
+Git bisect
