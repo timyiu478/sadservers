@@ -3,7 +3,8 @@
 List of notes:
 
 1. ["Manhattan": can't write data into database](notes/cant_write_data_into_database.md) [Disk] [Systemd] [Postgres] [Database]
-1. ["Tokyo": can't serve web file](notes/cant_serve_web_file.md) [TODO] [iptables] [File Permissions]
+1. ["Tokyo": can't serve web file](notes/cant_serve_web_file.md) [iptables] [File Permissions]
+1. ["Cape Town": Borked Nginx](notes/borked_nginx.md) [Nginx] [Max Open File Descriptor Limits]
 1. ["Bilbao": Basic Kubernetes Problems](notes/basic_k8s_problem.md) [Kubernetes] [Scheduling]
 1. ["Bucharest": Connecting to Postgres](notes/connecting_to_postgres.md) [Postgres] [Database]
 1. ["Geneva": Renew an SSL Certificate](notes/renew_ssl_cert.md) [SSL] [Reverse Proxy]
