@@ -2,6 +2,12 @@
 
 List of notes:
 
+1. ["Melbourne": WSGI with Gunicorn](notes/wsgi_with_gunicorn.md) [WSGI] [Gunicorn] [TODO]
+1. ["Atrani": Modify a SQlite3 Database](notes/modify_a_sqlite3_db.md) [SQlite] [Database] [TODO]
+1. ["Warsaw": Prometheus can't scrape the webserver](notes/prometheus_cant_scrape_the_webserver.md) [Prometheus] [Metric] [TODO]
+1. ["Lisbon": etcd SSL cert troubles](etcd_ssl_cert_troubles.md) [etcd] [SSL] [TODO]
+1. ["Kihei": Surely Not Another Disk Space Scenario](surely_not_another_disk_space_scenario.md) [Disk] [TODO]
+1. ["Tarifa": Between Two Seas](notes/between_two_seas.md) [Container] [HAProxy] [Nginx] [TODO]
 1. ["Bengaluru": Kubernetes StatefulSet least known characteristic](notes/k8s_statefulSet_least_known_character.md) [Kubernetes] [At Most Once sematic of StatefulSet]
 1. ["Buenos Aires": Kubernetes Pod Crashing](notes/k8s_pod_crashing.md) [Kubernetes] [Role Based Access Control]
 1. ["Salta": Docker container won't start.](notes/docker_container_wont_start.md) [Container] [Publishing ports]
