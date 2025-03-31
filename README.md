@@ -18,6 +18,7 @@ List of notes:
 1. ["Oaxaca": Close an Open File](notes/close_an_open_file.md) [List Of Open File]
 1. ["Saskatoon": counting IPs](notes/counting_ips.md) [Texting Processing]
 1. ["Apia": Needle in a Haystack](notes/needle_in_a_haystack.md) [Diff] [Checksum]
+1. ["Paris": Where is my webserver?](notes/where_is_my_web_server.md) [Hack]
 1. ["Lhasa": Easy Math](notes/easy_math.md) [Scripting]
 1. ["Unimak Island": Fun with Mr Jason](notes/fun_with_mr_jason.md) [json] [Text Processing]
 1. ["Bata": Find in /proc](notes/find_in_proc.md) [Text Processing]
