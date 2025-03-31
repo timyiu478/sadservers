@@ -30,6 +30,8 @@ Error:  client: response is invalid json. The endpoint is probably not valid etc
 
 3. try to use curl
 
+there is an nginx server running
+
 ```
 admin@i-0f019ab704f87f554:/$ curl https://localhost:2379/v2/keys/foo
 <html>
@@ -40,3 +42,47 @@ admin@i-0f019ab704f87f554:/$ curl https://localhost:2379/v2/keys/foo
 </body>
 </html>
 ```
+
+4. tried to play with nginx but no help
+
+there is no setting that integrate nginx with etcd
+
+5. tried to look at iptables (filter table) and see nothing
+
+6. the hint tells us to look at iptable (**nat** table)
+
+any tcp port 2379 redirets to 443
+
+```
+admin@i-0cc39c1f05ce6b8f1:/$ sudo iptables -t nat -L
+Chain PREROUTING (policy ACCEPT)
+target     prot opt source               destination         
+DOCKER     all  --  anywhere             anywhere             ADDRTYPE match dst-type LOCAL
+
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+REDIRECT   tcp  --  anywhere             anywhere             tcp dpt:2379 redir ports 443
+DOCKER     all  --  anywhere            !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+
+Chain POSTROUTING (policy ACCEPT)
+target     prot opt source               destination         
+MASQUERADE  all  --  172.17.0.0/16        anywhere            
+
+Chain DOCKER (2 references)
+target     prot opt source               destination         
+RETURN     all  --  anywhere             anywhere
+```
+
+7. remove the tcp port redirection
+
+```
+admin@i-0cc39c1f05ce6b8f1:/$ sudo iptables -t nat -D OUTPUT 1
+```
+
+### Lessions Learnt
+
+- dont just look the default table of iptables
+- can observe network packet patterns when no cue with SSL issue
