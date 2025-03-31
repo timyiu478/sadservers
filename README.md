@@ -29,3 +29,5 @@ List of notes:
 1. ["Unimak Island": Fun with Mr Jason](notes/fun_with_mr_jason.md) [json] [Text Processing]
 1. ["Bata": Find in /proc](notes/find_in_proc.md) [Text Processing]
 1. ["Minneapolis": Break a CSV file](notes/break_a_csv_file.md) [CSV] [Text Processing]
+1. ["Saint Paul": Merge Many CSVs files](notes/merge_many_csv_files.md) [CSV] [Text Processing]
+
