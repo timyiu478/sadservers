@@ -2,12 +2,12 @@
 
 List of notes:
 
-1. ["Melbourne": WSGI with Gunicorn](notes/wsgi_with_gunicorn.md) [WSGI] [Gunicorn] [HTTP Header]
-1. ["Atrani": Modify a SQlite3 Database](notes/modify_a_sqlite3_db.md) [SQlite] [Database] [SQL]
 1. ["Warsaw": Prometheus can't scrape the webserver](notes/prometheus_cant_scrape_the_webserver.md) [Prometheus] [Metric] [TODO]
 1. ["Lisbon": etcd SSL cert troubles](etcd_ssl_cert_troubles.md) [etcd] [SSL] [TODO]
 1. ["Kihei": Surely Not Another Disk Space Scenario](surely_not_another_disk_space_scenario.md) [Disk] [TODO]
 1. ["Tarifa": Between Two Seas](notes/between_two_seas.md) [Container] [HAProxy] [Nginx] [TODO]
+1. ["Melbourne": WSGI with Gunicorn](notes/wsgi_with_gunicorn.md) [Nginx] [Gunicorn] [HTTP Header]
+1. ["Atrani": Modify a SQlite3 Database](notes/modify_a_sqlite3_db.md) [SQlite] [Database] [SQL]
 1. ["Bengaluru": Kubernetes StatefulSet least known characteristic](notes/k8s_statefulSet_least_known_character.md) [Kubernetes] [At Most Once sematic of StatefulSet]
 1. ["Buenos Aires": Kubernetes Pod Crashing](notes/k8s_pod_crashing.md) [Kubernetes] [Role Based Access Control]
 1. ["Salta": Docker container won't start.](notes/docker_container_wont_start.md) [Container] [Publishing ports]
@@ -30,4 +30,3 @@ List of notes:
 1. ["Bata": Find in /proc](notes/find_in_proc.md) [Text Processing]
 1. ["Minneapolis": Break a CSV file](notes/break_a_csv_file.md) [CSV] [Text Processing]
 1. ["Saint Paul": Merge Many CSVs files](notes/merge_many_csv_files.md) [CSV] [Text Processing]
-
