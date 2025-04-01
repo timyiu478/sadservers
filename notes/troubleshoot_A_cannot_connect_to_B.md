@@ -468,54 +468,142 @@ RemainAfterExit=on
 WantedBy=multi-user.target
 ```
 
+16. fix postgresql config
+
+```
+[Unit]
+Description=PostgreSQL 13 Database Server
+After=network.target
+
+[Service]
+Type=forking
+User=postgres
+Group=postgres
+
+# Environment variables
+Environment=PGDATA=/var/lib/postgresql/13/main
+Environment=PGCONFIG=/etc/postgresql/13/main/postgresql.conf
+
+# Commands to start, stop, and reload PostgreSQL
+ExecStart=/usr/lib/postgresql/13/bin/pg_ctl start -D ${PGDATA} -s -w -o "-c config_file=${PGCONFIG}"
+ExecStop=/usr/lib/postgresql/13/bin/pg_ctl stop -D ${PGDATA} -s -m fast
+ExecReload=/usr/lib/postgresql/13/bin/pg_ctl reload -D ${PGDATA} -s
+
+# Timeout settings
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
+```
+
+17. Login postgres as super user
+
 ```
 admin@i-059cf7e283c5798aa:/var/lib/postgresql/13$ sudo -u postgres psql
 ```
 
+18. check users
+
 ```
-postgres=# SELECT rolname, rolpassword FROM pg_authid;
-          rolname          |             rolpassword             
----------------------------+-------------------------------------
- postgres                  | 
- pg_monitor                | 
- pg_read_all_settings      | 
- pg_read_all_stats         | 
- pg_stat_scan_tables       | 
- pg_read_server_files      | 
- pg_write_server_files     | 
- pg_execute_server_program | 
- pg_signal_backend         | 
- usuario                   | md51fb76ad714485db772076da0feb85d7f
+postgres=# \du
+                                   List of roles
+ Role name |                         Attributes                         | Member of 
+-----------+------------------------------------------------------------+-----------
+ postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ usuario   |                                                            | {}
 ```
 
-dbname = os.getenv('DBNAME')
-user = os.getenv('DBUSER')
-password = os.getenv('DBPASSWORD')
-host = os.getenv('DBHOST')
-port = os.getenv('DBPORT')
+19. update the password of `usuario`
+
+```
+postgres=# ALTER ROLE usuario WITH PASSWORD '123';
+ALTER ROLE
+```
+
+20. find what databases exist
+
+```
+postgres=# SELECT datname FROM pg_database WHERE datistemplate = false;
+  datname  
+-----------
+ postgres
+ nerdearla
+(2 rows)
+```
+
+21. grant the database access to usuario
+
+```
+postgres=# GRANT CONNECT ON DATABASE nerdearla TO usuario;
+GRANT
+```
+
+
+22. update `pg_hba.conf`
+
+```
+local   all             all                                     md5
+```
+
+23. access `nerdearla` database
+
+```
+postgres=# \c nerdearla
+You are now connected to database "nerdearla" as user "postgres".
+```
+
+24. find table
+
+```
+nerdearla=# \dt
+          List of relations
+ Schema |  Name   | Type  |  Owner   
+--------+---------+-------+----------
+ public | secrets | table | postgres
+(1 row)
+```
+
+25. select all rows from secrets table
+
+It seems this is what we want
+
+```
+nerdearla=# select * from secrets;
+ id |                secret                
+----+--------------------------------------
+  1 | https://sadservers.com/nerdearla2024
+(1 row)
+```
+
+26. set the database hidden environment variables
+
+
+```
+admin@i-06d89fbd948b98f0e:~$ cat .env
+DBNAME="nerdearla"
+DBUSER="usuario"
+DBPASSWORD="password"
+DBHOST="127.0.0.1"
+DBPORT="5433"
+admin@i-06d89fbd948b98f0e:~$ vim .env
+admin@i-06d89fbd948b98f0e:~$ cat .env
+DBNAME="nerdearla"
+DBUSER="usuario"
+DBPASSWORD="123"
+DBHOST="127.0.0.1"
+DBPORT="5432"
+```
+
+27. finally restart the db_connector 
+
+```
+admin@i-06d89fbd948b98f0e:~$ sudo systemctl restart db_connector.service 
+admin@i-06d89fbd948b98f0e:~$ curl localhost
+```
 
 ### Lessons Learnt
 
 1. check loaded kernel modules
+1. Postgres hacks
 1. `iptables` command is not found but we can `sudo iptables`
     1. `/sbin` is not in `$PATH` environment variable
-
-```
-admin@i-0cecb9998cb582f0e:~$ echo $PATH
-/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-admin@i-0cecb9998cb582f0e:~$ iptables
-bash: iptables: command not found
-admin@i-0cecb9998cb582f0e:~$ ls /sbin | grep iptables
-iptables
-iptables-apply
-iptables-legacy
-iptables-legacy-restore
-iptables-legacy-save
-iptables-nft
-iptables-nft-restore
-iptables-nft-save
-iptables-restore
-iptables-restore-translate
-iptables-save
-iptables-translate
-```

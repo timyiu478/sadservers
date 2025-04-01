@@ -2,7 +2,7 @@
 
 List of notes:
 
-1. ["Batumi": Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) []
+1. ["Batumi": Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) [iptables] [Postgres] [Systemd]
 1. ["Kihei": Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) [Disk] [strace] [LVM]
 1. ["Lisbon": etcd SSL cert troubles](notes/etcd_ssl_cert_troubles.md) [etcd] [SSL] [iptables]
 1. ["Tarifa": Between Two Seas](notes/between_two_seas.md) [Container] [HAProxy] [Nginx] [Load Balancing]
