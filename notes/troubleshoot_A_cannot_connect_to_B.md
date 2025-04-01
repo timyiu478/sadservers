@@ -309,4 +309,213 @@ tcp        0      0 127.0.0.1:2019          0.0.0.0:*               LISTEN      
 tcp        0      0 127.0.0.1:80            0.0.0.0:*               LISTEN      1191/caddy
 ```
 
+10. change caddy to listen port 8088
 
+it works.
+
+```
+admin@i-06d801d29173c69f1:/etc/caddy$ curl 127.0.0.1:8088
+An error occurred: could not connect to server: Connection refused
+        Is the server running on host "127.0.0.1" and accepting
+        TCP/IP connections on port 5433?
+```
+
+11. check loaded kernel modules
+
+the firewall rules related module e.g. `nft_chain_nat` is loaded
+
+```
+admin@i-0cecb9998cb582f0e:~$ lsmod
+Module                  Size  Used by
+nf_conntrack_netlink    57344  0
+xfrm_user              45056  1
+xfrm_algo              16384  1 xfrm_user
+br_netfilter           32768  0
+bridge                253952  1 br_netfilter
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+dm_mod                163840  0
+overlay               147456  0
+nft_chain_nat          16384  4
+xt_MASQUERADE          20480  1
+nf_nat                 57344  2 nft_chain_nat,xt_MASQUERADE
+xt_addrtype            16384  2
+nft_counter            16384  16
+xt_conntrack           16384  1
+nf_conntrack          176128  4 xt_conntrack,nf_nat,nf_conntrack_netlink,xt_MASQUERADE
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+xt_tcpudp              20480  1
+nft_compat             20480  5
+nf_tables             274432  46 nft_compat,nft_counter,nft_chain_nat
+libcrc32c              16384  3 nf_conntrack,nf_nat,nf_tables
+nfnetlink              20480  4 nft_compat,nf_conntrack_netlink,nf_tables
+nls_ascii              16384  1
+nls_cp437              20480  1
+vfat                   20480  1
+fat                    86016  1 vfat
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+ghash_clmulni_intel    16384  0
+aesni_intel           372736  0
+crypto_simd            16384  1 aesni_intel
+cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+glue_helper            16384  1 aesni_intel
+evdev                  24576  3
+serio_raw              20480  0
+button                 24576  0
+fuse                  167936  1
+configfs               57344  1
+ip_tables              32768  0
+x_tables               53248  6 xt_conntrack,nft_compat,xt_tcpudp,xt_addrtype,ip_tables,xt_MASQUERADE
+autofs4                53248  2
+ena                   118784  0
+crc32c_intel           24576  3
+```
+
+12. check iptables
+
+all packets to port 80 is dropped.
+
+```
+admin@i-0cecb9998cb582f0e:~$ sudo iptables -L -n
+
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+
+Chain FORWARD (policy DROP)
+target     prot opt source               destination         
+DOCKER-USER  all  --  0.0.0.0/0            0.0.0.0/0           
+DOCKER-ISOLATION-STAGE-1  all  --  0.0.0.0/0            0.0.0.0/0           
+ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+DOCKER     all  --  0.0.0.0/0            0.0.0.0/0           
+ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0   
+```
+
+13. remove such iptables rule
+
+```
+admin@i-0cecb9998cb582f0e:~$ sudo iptables -D INPUT 1
+```
+
+14. try to curl 
+
+Now, we can talk to the db_connector via caddy reverse proxy.
+Lets fix the database now.
+
+```
+admin@i-0cecb9998cb582f0e:~$ curl localhost:80
+An error occurred: could not connect to server: Connection refused
+        Is the server running on host "127.0.0.1" and accepting
+        TCP/IP connections on port 5433?
+admin@i-0cecb9998cb582f0e:~$ curl localhost
+An error occurred: could not connect to server: Connection refused
+        Is the server running on host "127.0.0.1" and accepting
+        TCP/IP connections on port 5433?
+admin@i-0cecb9998cb582f0e:~$ curl 127.0.0.1
+An error occurred: could not connect to server: Connection refused
+        Is the server running on host "127.0.0.1" and accepting
+        TCP/IP connections on port 5433?
+```
+
+15. check the status of postgresql
+
+The postgresql unit is incorrect:
+
+```
+ExecStart=/bin/true
+ExecReload=/bin/true
+```
+
+Details:
+
+```
+admin@i-0cecb9998cb582f0e:/var/log/postgresql$ cat postgresql-13-main.log 
+2024-09-13 15:06:20.421 UTC [10687] LOG:  starting PostgreSQL 13.16 (Debian 13.16-0+deb11u1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+2024-09-13 15:06:20.421 UTC [10687] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-13 15:06:20.424 UTC [10687] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-09-13 15:06:20.430 UTC [10688] LOG:  database system was shut down at 2024-09-13 15:06:19 UTC
+2024-09-13 15:06:20.436 UTC [10687] LOG:  database system is ready to accept connections
+2024-09-13 15:07:18.874 UTC [10687] LOG:  received fast shutdown request
+2024-09-13 15:07:18.877 UTC [10687] LOG:  aborting any active transactions
+2024-09-13 15:07:18.882 UTC [10687] LOG:  background worker "logical replication launcher" (PID 10694) exited with exit code 1
+2024-09-13 15:07:18.892 UTC [10689] LOG:  shutting down
+2024-09-13 15:07:18.930 UTC [10687] LOG:  database system is shut down
+
+admin@i-0cecb9998cb582f0e:/var/log/postgresql$ systemctl status postgresql.service 
+● postgresql.service - PostgreSQL RDBMS
+     Loaded: loaded (/lib/systemd/system/postgresql.service; disabled; vendor preset: enabled)
+     Active: inactive (dead)
+
+admin@i-0cecb9998cb582f0e:/var/log/postgresql$ systemctl cat postgresql
+# /lib/systemd/system/postgresql.service
+# systemd service for managing all PostgreSQL clusters on the system. This
+# service is actually a systemd target, but we are using a service since
+# targets cannot be reloaded.
+
+[Unit]
+Description=PostgreSQL RDBMS
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+ExecReload=/bin/true
+RemainAfterExit=on
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+admin@i-059cf7e283c5798aa:/var/lib/postgresql/13$ sudo -u postgres psql
+```
+
+```
+postgres=# SELECT rolname, rolpassword FROM pg_authid;
+          rolname          |             rolpassword             
+---------------------------+-------------------------------------
+ postgres                  | 
+ pg_monitor                | 
+ pg_read_all_settings      | 
+ pg_read_all_stats         | 
+ pg_stat_scan_tables       | 
+ pg_read_server_files      | 
+ pg_write_server_files     | 
+ pg_execute_server_program | 
+ pg_signal_backend         | 
+ usuario                   | md51fb76ad714485db772076da0feb85d7f
+```
+
+dbname = os.getenv('DBNAME')
+user = os.getenv('DBUSER')
+password = os.getenv('DBPASSWORD')
+host = os.getenv('DBHOST')
+port = os.getenv('DBPORT')
+
+### Lessons Learnt
+
+1. check loaded kernel modules
+1. `iptables` command is not found but we can `sudo iptables`
+    1. `/sbin` is not in `$PATH` environment variable
+
+```
+admin@i-0cecb9998cb582f0e:~$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+admin@i-0cecb9998cb582f0e:~$ iptables
+bash: iptables: command not found
+admin@i-0cecb9998cb582f0e:~$ ls /sbin | grep iptables
+iptables
+iptables-apply
+iptables-legacy
+iptables-legacy-restore
+iptables-legacy-save
+iptables-nft
+iptables-nft-restore
+iptables-nft-save
+iptables-restore
+iptables-restore-translate
+iptables-save
+iptables-translate
+```
