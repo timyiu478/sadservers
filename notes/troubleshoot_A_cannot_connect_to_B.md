@@ -539,7 +539,7 @@ GRANT
 ```
 
 
-22. update `pg_hba.conf`
+22. update `pg_hba.conf` for login `usuario` using password
 
 ```
 local   all             all                                     md5
