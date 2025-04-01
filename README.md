@@ -2,8 +2,9 @@
 
 List of notes:
 
-1. ["Kihei": Surely Not Another Disk Space Scenario](surely_not_another_disk_space_scenario.md) [Disk] [strace] [LVM]
-1. ["Lisbon": etcd SSL cert troubles](etcd_ssl_cert_troubles.md) [etcd] [SSL] [iptables]
+1. ["Batumi": Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) []
+1. ["Kihei": Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) [Disk] [strace] [LVM]
+1. ["Lisbon": etcd SSL cert troubles](notes/etcd_ssl_cert_troubles.md) [etcd] [SSL] [iptables]
 1. ["Tarifa": Between Two Seas](notes/between_two_seas.md) [Container] [HAProxy] [Nginx] [Load Balancing]
 1. ["Melbourne": WSGI with Gunicorn](notes/wsgi_with_gunicorn.md) [Nginx] [Gunicorn] [HTTP Header]
 1. ["Warsaw": Prometheus can't scrape the webserver](notes/prometheus_cant_scrape_the_webserver.md) [Prometheus] [Metric] [HTTP Method]
