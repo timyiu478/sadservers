@@ -6,6 +6,7 @@ List of notes:
 |-----------------------------------------------------|--------------------------------------------------|
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
+| ["Moyogalpa": Security Snag. The Trials of Mary and John](notes/security_snag.md) | `SSL`, `DNS`, `AppArmor` |
 | ["Minneapolis with a Vengeance": Break a CSV file](notes/break_a_csv_file_2.md) | `CSV`, `Data Processing`, `Scripting`, `Min Heap`                      |
 | [Lisbon: etcd SSL cert troubles](notes/etcd_ssl_cert_troubles.md) | `etcd`, `SSL`, `iptables`                        |
 | [Tarifa: Between Two Seas](notes/between_two_seas.md) | `Container`, `HAProxy`, `Nginx`, `Load Balancing`|
