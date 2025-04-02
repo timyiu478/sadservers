@@ -17,4 +17,4 @@ dos2unix: converting file data.csv to Unix format...
 
 TLDR: (1) append header for each partitioned csv; (2) sort rows of data.csv in terms of row size; (3) for row in rows, append the row to the file withe least file size with the help of min heap data structure.
 
-source code: [break_csv.py](../script/break_csv.py)
+source code: [break_csv.py](../scripts/break_csv.py)
