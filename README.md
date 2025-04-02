@@ -4,13 +4,9 @@ List of notes:
 
 | Title                                     | Tags                                      |
 |-----------------------------------------------------|--------------------------------------------------|
-| [Yokohama: Linux Users Working Together](notes/linux_users_working_together.md) | `Bash`, `TODO`                                   |
-| [Hanoi: Find the Multitasking Users](notes/find_the_multitasking_users.md) | `Bash`, `TODO`                                   |
-| [Rosario: Restore a MySQL database](notes/restore_a_mysql_db.md) | `MySql`, `Database`, `TODO`                      |
-| [Marrakech: Word Histogram](notes/word_histogram.md) | `Bash`, `TODO`                                   |
-| [Venice: Am I in a container?](notes/am_i_in_a_container.md) | `Container`, `TODO`                              |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
+| ["Minneapolis with a Vengeance": Break a CSV file](notes/break_a_csv_file_2.md) | `CSV`, `Data Processing`, `Scripting`, `Min Heap`                      |
 | [Lisbon: etcd SSL cert troubles](notes/etcd_ssl_cert_troubles.md) | `etcd`, `SSL`, `iptables`                        |
 | [Tarifa: Between Two Seas](notes/between_two_seas.md) | `Container`, `HAProxy`, `Nginx`, `Load Balancing`|
 | [Melbourne: WSGI with Gunicorn](notes/wsgi_with_gunicorn.md) | `Nginx`, `Gunicorn`, `HTTP Header`               |
@@ -32,10 +28,14 @@ List of notes:
 | [Saint John: what is writing to this log file?](notes/what_is_writing_to_this_log_file.md) | `List Of Open File`                              |
 | [Oaxaca: Close an Open File](notes/close_an_open_file.md) | `List Of Open File`                              |
 | [Saskatoon: counting IPs](notes/counting_ips.md) | `Data Processing`                                |
+| [Hanoi: Find the Multitasking Users](notes/find_the_multitasking_users.md) | `Bash`                                   |
+| [Marrakech: Word Histogram](notes/word_histogram.md) | `Bash`                                   |
 | [Apia: Needle in a Haystack](notes/needle_in_a_haystack.md) | `Diff`, `Checksum`                               |
 | [Paris: Where is my webserver?](notes/where_is_my_web_server.md) | `Hack`                                           |
+| [Yokohama: Linux Users Working Together](notes/linux_users_working_together.md) | `Bash`, `Append-Only File`                                   |
 | [Lhasa: Easy Math](notes/easy_math.md) | `Scripting`                                      |
 | [Unimak Island: Fun with Mr Jason](notes/fun_with_mr_jason.md) | `json`, `Data Processing`                        |
 | [Bata: Find in /proc](notes/find_in_proc.md) | `Data Processing`                                |
 | [Minneapolis: Break a CSV file](notes/break_a_csv_file.md) | `CSV`, `Data Processing`                         |
+| [Venice: Am I in a container?](notes/am_i_in_a_container.md) | `Container`                              |
 | [Saint Paul: Merge Many CSVs files](notes/merge_many_csv_files.md) | `CSV`, `Data Processing`                         |
