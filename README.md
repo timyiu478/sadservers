@@ -4,6 +4,7 @@ List of notes:
 
 | Title                                     | Tags                                      |
 |-----------------------------------------------------|--------------------------------------------------|
+| ["Manado": How much do you press?](notes/how_much_do_you_press.md) | `Compression`
 | ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
