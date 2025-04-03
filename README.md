@@ -4,6 +4,7 @@ List of notes:
 
 | Title                                     | Tags                                      |
 |-----------------------------------------------------|--------------------------------------------------|
+| ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
 | ["Moyogalpa": Security Snag. The Trials of Mary and John](notes/security_snag.md) | `SSL`, `DNS`, `AppArmor` |
