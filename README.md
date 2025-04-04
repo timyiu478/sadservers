@@ -23,6 +23,7 @@ List of notes:
 | [Tokyo: can't serve web file](notes/cant_serve_web_file.md) | `iptables`, `File Permissions`                   |
 | [Cape Town: Borked Nginx](notes/borked_nginx.md) | `Nginx`, `Max Open File Descriptor Limits`       |
 | [Bilbao: Basic Kubernetes Problems](notes/basic_k8s_problem.md) | `Kubernetes`, `Scheduling`                       |
+| ["Ivujivik": Parlez-vous Français?](notes/fix_csv.md) | `SQL`, `Data Processing`, `CSV` |
 | [Bucharest: Connecting to Postgres](notes/connecting_to_postgres.md) | `Postgres`, `Database`                           |
 | ["Manado": How much do you press?](notes/how_much_do_you_press.md) | `Compression` |
 | [Geneva: Renew an SSL Certificate](notes/renew_ssl_cert.md) | `SSL`, `Reverse Proxy`                           |
