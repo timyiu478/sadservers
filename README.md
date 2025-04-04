@@ -4,10 +4,10 @@ List of notes:
 
 | Title                                     | Tags                                      |
 |-----------------------------------------------------|--------------------------------------------------|
-| ["Manado": How much do you press?](notes/how_much_do_you_press.md) | `Compression`
 | ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
+| ["Depok": Nginx with Brotli](notes/nginx_with_brotli.md) | `Nginx`, `Compression`  | 
 | ["Moyogalpa": Security Snag. The Trials of Mary and John](notes/security_snag.md) | `SSL`, `DNS`, `AppArmor` |
 | ["Minneapolis with a Vengeance": Break a CSV file](notes/break_a_csv_file_2.md) | `CSV`, `Data Processing`, `Scripting`, `Min Heap`                      |
 | [Lisbon: etcd SSL cert troubles](notes/etcd_ssl_cert_troubles.md) | `etcd`, `SSL`, `iptables`                        |
@@ -24,6 +24,7 @@ List of notes:
 | [Cape Town: Borked Nginx](notes/borked_nginx.md) | `Nginx`, `Max Open File Descriptor Limits`       |
 | [Bilbao: Basic Kubernetes Problems](notes/basic_k8s_problem.md) | `Kubernetes`, `Scheduling`                       |
 | [Bucharest: Connecting to Postgres](notes/connecting_to_postgres.md) | `Postgres`, `Database`                           |
+| ["Manado": How much do you press?](notes/how_much_do_you_press.md) | `Compression` |
 | [Geneva: Renew an SSL Certificate](notes/renew_ssl_cert.md) | `SSL`, `Reverse Proxy`                           |
 | [Taipei: Come a-knocking](notes/come_a_knock.md) | `Port Knocking`                                  |
 | [Tokamachi: Troubleshooting a Named Pipe](notes/troubleshoot_a_named_pipe.md) | `Named Pipe`, `File Locking`                     |
