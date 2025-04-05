@@ -7,7 +7,7 @@ List of notes:
 | ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
-| ["Jakarta": it's always DNS](notes/its_always_dns.md) | `DNS` |
+| ["Jakarta": it's always DNS](notes/its_always_dns.md) | `DNS`, `Name Service Switch` |
 | ["Depok": Nginx with Brotli](notes/nginx_with_brotli.md) | `Nginx`, `Compression`  | 
 | ["Moyogalpa": Security Snag. The Trials of Mary and John](notes/security_snag.md) | `SSL`, `DNS`, `AppArmor` |
 | ["Minneapolis with a Vengeance": Break a CSV file](notes/break_a_csv_file_2.md) | `CSV`, `Data Processing`, `Scripting`, `Min Heap`                      |
@@ -19,6 +19,7 @@ List of notes:
 | [Bengaluru: Kubernetes StatefulSet least known characteristic](notes/k8s_statefulSet_least_known_character.md) | `Kubernetes`, `At Most Once sematic of StatefulSet`|
 | [Helsingør: The first walls of postgres physical replication](notes/first_walls_of_postgres_physical_replication.md) | `Postgres`, `Container`, `Replica`               |
 | [Buenos Aires: Kubernetes Pod Crashing](notes/k8s_pod_crashing.md) | `Kubernetes`, `Role Based Access Control`        |
+| ["Bern": Docker web container can't connect to db container.](notes/docker_web_container_cant_connect_to_db_container.md) | `Container`, `DNS` |
 | [Salta: Docker container won't start.](notes/docker_container_wont_start.md) | `Container`, `Publishing ports`                  |
 | [Manhattan: can't write data into database](notes/cant_write_data_into_database.md) | `Disk`, `Systemd`, `Postgres`, `Database`        |
 | [Tokyo: can't serve web file](notes/cant_serve_web_file.md) | `iptables`, `File Permissions`                   |
