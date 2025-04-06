@@ -17,6 +17,7 @@ List of notes:
 | [Melbourne: WSGI with Gunicorn](notes/wsgi_with_gunicorn.md) | `Nginx`, `Gunicorn`, `HTTP Header`               |
 | [Warsaw: Prometheus can't scrape the webserver](notes/prometheus_cant_scrape_the_webserver.md) | `Prometheus`, `Metric`, `HTTP Method`            |
 | [Atrani: Modify a SQlite3 Database](notes/modify_a_sqlite3_db.md) | `SQlite`, `Database`, `SQL`                      |
+| ["Singara": Docker and Kubernetes web app not working.](notes/docker_and_k8s_web_app_not_working.md) | `Kubernetes`, `k3s`, `Node Port Range` |
 | [Bengaluru: Kubernetes StatefulSet least known characteristic](notes/k8s_statefulSet_least_known_character.md) | `Kubernetes`, `At Most Once sematic of StatefulSet`|
 | [Helsingør: The first walls of postgres physical replication](notes/first_walls_of_postgres_physical_replication.md) | `Postgres`, `Container`, `Replica`               |
 | [Buenos Aires: Kubernetes Pod Crashing](notes/k8s_pod_crashing.md) | `Kubernetes`, `Role Based Access Control`        |
