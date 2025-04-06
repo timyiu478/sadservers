@@ -6,6 +6,7 @@ List of notes:
 |-----------------------------------------------------|--------------------------------------------------|
 | ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
+| ["Karakorum": WTFIT – What The Fun Is This?](notes/wtfit.md) | `File Access Control`, `Web Server` |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
 | ["Jakarta": it's always DNS](notes/its_always_dns.md) | `DNS`, `Name Service Switch` |
 | ["Depok": Nginx with Brotli](notes/nginx_with_brotli.md) | `Nginx`, `Compression`  | 
