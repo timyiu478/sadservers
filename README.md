@@ -5,6 +5,7 @@ List of notes:
 | Title                                     | Tags                                      |
 |-----------------------------------------------------|--------------------------------------------------|
 | ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
+| ["Roseau": Hack a Web Server](notes/hack_a_web_server.md) | `Hack`, `Web Server` |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | ["Karakorum": WTFIT – What The Fun Is This?](notes/wtfit.md) | `File Access Control`, `Web Server` |
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
