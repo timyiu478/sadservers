@@ -11,6 +11,7 @@ List of notes:
 | [Kihei: Surely Not Another Disk Space Scenario](notes/surely_not_another_disk_space_scenario.md) | `Disk`, `strace`, `LVM`                          |
 | ["Jakarta": it's always DNS](notes/its_always_dns.md) | `DNS`, `Name Service Switch` |
 | ["Pokhara": SSH and other sshenanigans](notes/ssh_and_other_sshenanigans.md) | `SSH`, `User Account` |
+| ["Monaco": Disappearing Trick](notes/disapperaing_trick.md) | `Environment Variable`, `Hack`, `Git` |
 | ["Depok": Nginx with Brotli](notes/nginx_with_brotli.md) | `Nginx`, `Compression`  | 
 | ["Moyogalpa": Security Snag. The Trials of Mary and John](notes/security_snag.md) | `SSL`, `DNS`, `AppArmor` |
 | ["Minneapolis with a Vengeance": Break a CSV file](notes/break_a_csv_file_2.md) | `CSV`, `Data Processing`, `Scripting`, `Min Heap`                      |
