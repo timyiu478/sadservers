@@ -81,12 +81,21 @@ if __name__ == '__main__':
 
 SUPERSECRETPASSWORD=bdFBkE4suaCy
 
+Note: https://unix.stackexchange.com/questions/29128/how-to-read-environment-variables-of-a-process
+
 ```
 admin@i-054d3c4bfff4b2ba2:~$ ps -aux | grep web
 admin        570  0.0  6.0 106768 28220 ?        Ss   13:28   0:00 /usr/bin/python3 /home/admin/webserver.py
 admin       1625  0.0  0.1   5264   704 pts/3    S<+  13:59   0:00 grep web
 admin@i-054d3c4bfff4b2ba2:~$ cat /proc/570/environ 
 LANG=C.UTF-8PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOME=/home/adminLOGNAME=adminUSER=adminSHELL=/bin/bashINVOCATION_ID=ab5627b581ce464086895243c2bf5889JOURNAL_STREAM=8:11365SUPERSECRETPASSWORD=bdFBkE4suaCy
+```
+
+we can also get such environment variable in `gdb`:
+
+```
+(gdb) call getenv("SUPERSECRETPASSWORD")
+$3 = 0x7ffce0110fda "bdFBkE4suaCy"
 ```
 
 6. try the password `bdFBkE4suaCy`
