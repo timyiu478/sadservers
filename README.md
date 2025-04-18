@@ -27,8 +27,7 @@ List of notes:
 | ["Bern": Docker web container can't connect to db container.](notes/docker_web_container_cant_connect_to_db_container.md) | `Container`, `DNS` |
 | [Salta: Docker container won't start.](notes/docker_container_wont_start.md) | `Container`, `Publishing ports`                  |
 | [Manhattan: can't write data into database](notes/cant_write_data_into_database.md) | `Disk`, `Systemd`, `Postgres`, `Database`        |
-| [Tokyo: can't serve web file](notes/cant_serve_web_file.md) | `iptables`, `File Permissions`                   |
-| [Cape Town: Borked Nginx](notes/borked_nginx.md) | `Nginx`, `Max Open File Descriptor Limits`       |
+| [Tokyo: can't serve web file](notes/cant_serve_web_file.md) | `iptables`, `File Permissions`                   | | [Cape Town: Borked Nginx](notes/borked_nginx.md) | `Nginx`, `Max Open File Descriptor Limits`       |
 | [Bilbao: Basic Kubernetes Problems](notes/basic_k8s_problem.md) | `Kubernetes`, `Scheduling`                       |
 | ["Ivujivik": Parlez-vous Français?](notes/fix_csv.md) | `SQL`, `Data Processing`, `CSV` |
 | [Bucharest: Connecting to Postgres](notes/connecting_to_postgres.md) | `Postgres`, `Database`                           |
@@ -51,3 +50,4 @@ List of notes:
 | [Minneapolis: Break a CSV file](notes/break_a_csv_file.md) | `CSV`, `Data Processing`                         |
 | [Venice: Am I in a container?](notes/am_i_in_a_container.md) | `Container`                              |
 | [Saint Paul: Merge Many CSVs files](notes/merge_many_csv_files.md) | `CSV`, `Data Processing`                         |
+| ["Chennai": Pull a Rabbit from a Hat](/notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
