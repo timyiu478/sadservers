@@ -6,6 +6,7 @@ List of notes:
 |-----------------------------------------------------|--------------------------------------------------|
 | ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
 | ["Belo-Horizonte": A Java Enigma](notes/a_java_engima.md) | `Java`, `Swapping` |
+| ["Florence": Database Migration Hell](notes/database_migration_hell.md) | `Database`, `Migration`, `Nginx` |
 | ["Roseau": Hack a Web Server](notes/hack_a_web_server.md) | `Hack`, `Web Server` |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | ["Karakorum": WTFIT – What The Fun Is This?](notes/wtfit.md) | `File Access Control`, `Web Server` |
@@ -29,6 +30,7 @@ List of notes:
 | [Salta: Docker container won't start.](notes/docker_container_wont_start.md) | `Container`, `Publishing ports`                  |
 | [Manhattan: can't write data into database](notes/cant_write_data_into_database.md) | `Disk`, `Systemd`, `Postgres`, `Database`        |
 | [Tokyo: can't serve web file](notes/cant_serve_web_file.md) | `iptables`, `File Permissions`                   | | [Cape Town: Borked Nginx](notes/borked_nginx.md) | `Nginx`, `Max Open File Descriptor Limits`       |
+| ["Hong-Kong": can't write data into database.](notes/hk_cant_write_data_into_database.md) | `Disk`, `Database`, `Postgres` |
 | [Bilbao: Basic Kubernetes Problems](notes/basic_k8s_problem.md) | `Kubernetes`, `Scheduling`                       |
 | ["Ivujivik": Parlez-vous Français?](notes/fix_csv.md) | `SQL`, `Data Processing`, `CSV` |
 | [Bucharest: Connecting to Postgres](notes/connecting_to_postgres.md) | `Postgres`, `Database`                           |
