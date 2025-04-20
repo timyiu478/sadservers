@@ -247,6 +247,7 @@ db exited with code 1
 - added share bridge network
 - let `db` runs as `postgres` user
 - let `api` wait for `db` become ready
+- let `api_aggregator` wait for `api` become ready
 
 ```
 version: '3.8'
