@@ -54,4 +54,5 @@ List of notes:
 | [Venice: Am I in a container?](notes/am_i_in_a_container.md) | `Container`                              |
 | [Saint Paul: Merge Many CSVs files](notes/merge_many_csv_files.md) | `CSV`, `Data Processing`                         |
 | ["Rosario": Restore a MySQL database](/notes/restore_a_mysql_database.md) | `MySQL`, `Database`, `Backup` |
-| ["Chennai": Pull a Rabbit from a Hat](/notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
+| ["Abaokoro": Restore MySQL Databases Spooked by a Ghost](notes/restore_mysql_db_spooked_by_a_ghost.md) | `MySQL`, `Database`, `Backup` |
+| ["Chennai": Pull a Rabbit from a Hat](notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
