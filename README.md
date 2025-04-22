@@ -44,6 +44,7 @@ List of notes:
 | [Saskatoon: counting IPs](notes/counting_ips.md) | `Data Processing`                                |
 | [Hanoi: Find the Multitasking Users](notes/find_the_multitasking_users.md) | `Bash`                                   |
 | [Marrakech: Word Histogram](notes/word_histogram.md) | `Bash`                                   |
+| ["Bekasi": Supervisor is still around](notes/supervisor_is_still_around.md) | `Environment Variable` |
 | [Apia: Needle in a Haystack](notes/needle_in_a_haystack.md) | `Diff`, `Checksum`                               |
 | [Paris: Where is my webserver?](notes/where_is_my_web_server.md) | `Hack`                                           |
 | [Yokohama: Linux Users Working Together](notes/linux_users_working_together.md) | `Bash`, `Append-Only File`                                   |
@@ -53,6 +54,7 @@ List of notes:
 | [Minneapolis: Break a CSV file](notes/break_a_csv_file.md) | `CSV`, `Data Processing`                         |
 | [Venice: Am I in a container?](notes/am_i_in_a_container.md) | `Container`                              |
 | [Saint Paul: Merge Many CSVs files](notes/merge_many_csv_files.md) | `CSV`, `Data Processing`                         |
-| ["Rosario": Restore a MySQL database](/notes/restore_a_mysql_database.md) | `MySQL`, `Database`, `Backup` |
+| ["Rosario": Restore a MySQL database](notes/restore_a_mysql_database.md) | `MySQL`, `Database`, `Backup` |
 | ["Abaokoro": Restore MySQL Databases Spooked by a Ghost](notes/restore_mysql_db_spooked_by_a_ghost.md) | `MySQL`, `Database`, `Backup` |
 | ["Chennai": Pull a Rabbit from a Hat](notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
+
