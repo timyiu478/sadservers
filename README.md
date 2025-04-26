@@ -1,6 +1,10 @@
 # Sad Servers
 
-List of notes:
+This repository is a collection of troubleshooting notes for server issues encountered in real-world scenarios. It serves as a reference for developers and system administrators facing similar challenges.
+
+---
+
+# Notes
 
 | Title                                     | Tags                                      |
 |-----------------------------------------------------|--------------------------------------------------|
