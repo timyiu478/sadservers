@@ -7,6 +7,7 @@ List of notes:
 | ["Tukaani": XZ LZMA Library Compromised](notes/xz_mzma_library_compromised.md) | `Shared Library`                 |
 | ["Belo-Horizonte": A Java Enigma](notes/a_java_engima.md) | `Java`, `Swapping` |
 | ["Florence": Database Migration Hell](notes/database_migration_hell.md) | `Database`, `Migration`, `Nginx` |
+| ["Constanta": Jumping Frog](notes/jumping_frog.md) | `CTF`, `Hack`, `newgrp`, `SSH` |
 | ["Roseau": Hack a Web Server](notes/hack_a_web_server.md) | `Hack`, `Web Server` |
 | [Batumi: Troubleshoot "A" cannot connect to "B"](notes/troubleshoot_A_cannot_connect_to_B.md) | `iptables`, `Postgres`, `Systemd`                |
 | ["Karakorum": WTFIT – What The Fun Is This?](notes/wtfit.md) | `File Access Control`, `Web Server` |
@@ -57,4 +58,3 @@ List of notes:
 | ["Rosario": Restore a MySQL database](notes/restore_a_mysql_database.md) | `MySQL`, `Database`, `Backup` |
 | ["Abaokoro": Restore MySQL Databases Spooked by a Ghost](notes/restore_mysql_db_spooked_by_a_ghost.md) | `MySQL`, `Database`, `Backup` |
 | ["Chennai": Pull a Rabbit from a Hat](notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
-
