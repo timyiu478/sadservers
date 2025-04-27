@@ -62,3 +62,4 @@ This repository is a collection of troubleshooting notes for server issues encou
 | ["Rosario": Restore a MySQL database](notes/restore_a_mysql_database.md) | `MySQL`, `Database`, `Backup` |
 | ["Abaokoro": Restore MySQL Databases Spooked by a Ghost](notes/restore_mysql_db_spooked_by_a_ghost.md) | `MySQL`, `Database`, `Backup` |
 | ["Chennai": Pull a Rabbit from a Hat](notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
+| [Bharuch: "Lost in Translation"](notes/lost_in_translation.md) | `Container`, `CPU Architecture`, `Emulator` |
