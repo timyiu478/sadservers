@@ -21,6 +21,7 @@ This repository is a collection of troubleshooting notes for server issues encou
 | ["Monaco": Disappearing Trick](notes/disapperaing_trick.md) | `Environment Variable`, `Hack`, `Git` |
 | ["Depok": Nginx with Brotli](notes/nginx_with_brotli.md) | `Nginx`, `Compression`  | 
 | ["Moyogalpa": Security Snag. The Trials of Mary and John](notes/security_snag.md) | `SSL`, `DNS`, `AppArmor` |
+| [Bangalore: Envoy Panics](notes/envoy_panics.md) | `Envoy`, `Health Check`, `Forward Proxy`, `Panic Mode` |
 | ["Minneapolis with a Vengeance": Break a CSV file](notes/break_a_csv_file_2.md) | `CSV`, `Data Processing`, `Scripting`, `Min Heap`                      |
 | [Lisbon: etcd SSL cert troubles](notes/etcd_ssl_cert_troubles.md) | `etcd`, `SSL`, `iptables`                        |
 | [Tarifa: Between Two Seas](notes/between_two_seas.md) | `Container`, `HAProxy`, `Nginx`, `Load Balancing`|
@@ -63,3 +64,4 @@ This repository is a collection of troubleshooting notes for server issues encou
 | ["Abaokoro": Restore MySQL Databases Spooked by a Ghost](notes/restore_mysql_db_spooked_by_a_ghost.md) | `MySQL`, `Database`, `Backup` |
 | ["Chennai": Pull a Rabbit from a Hat](notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
 | [Bharuch: "Lost in Translation"](notes/lost_in_translation.md) | `Container`, `CPU Architecture`, `Emulator` |
+| ["Quito": Control One Container from Another](notes/control_one_container_from_another.md) | `Container`, `Mount` |
