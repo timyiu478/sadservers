@@ -35,7 +35,8 @@ This repository is a collection of troubleshooting notes for server issues encou
 | ["Bern": Docker web container can't connect to db container.](notes/docker_web_container_cant_connect_to_db_container.md) | `Container`, `DNS` |
 | [Salta: Docker container won't start.](notes/docker_container_wont_start.md) | `Container`, `Publishing ports`                  |
 | [Manhattan: can't write data into database](notes/cant_write_data_into_database.md) | `Disk`, `Systemd`, `Postgres`, `Database`        |
-| [Tokyo: can't serve web file](notes/cant_serve_web_file.md) | `iptables`, `File Permissions`                   | | [Cape Town: Borked Nginx](notes/borked_nginx.md) | `Nginx`, `Max Open File Descriptor Limits`       |
+| [Tokyo: can't serve web file](notes/cant_serve_web_file.md) | `iptables`, `File Permissions`                   | 
+| [Cape Town: Borked Nginx](notes/borked_nginx.md) | `Nginx`, `Max Open File Descriptor Limits`       |
 | ["Hong-Kong": can't write data into database.](notes/hk_cant_write_data_into_database.md) | `Disk`, `Database`, `Postgres` |
 | [Bilbao: Basic Kubernetes Problems](notes/basic_k8s_problem.md) | `Kubernetes`, `Scheduling`                       |
 | ["Ivujivik": Parlez-vous Français?](notes/fix_csv.md) | `SQL`, `Data Processing`, `CSV` |
