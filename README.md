@@ -65,3 +65,4 @@ This repository is a collection of troubleshooting notes for server issues encou
 | ["Chennai": Pull a Rabbit from a Hat](notes/pull_a_rabbit_from_a_hat.md) | `RabbitMQ`, `Environment Variables`, `Access Control` | 
 | [Bharuch: "Lost in Translation"](notes/lost_in_translation.md) | `Container`, `CPU Architecture`, `Emulator` |
 | ["Quito": Control One Container from Another](notes/control_one_container_from_another.md) | `Container`, `Mount` |
+| ["Budapest": User Creation](notes/user_creation.md) | |
