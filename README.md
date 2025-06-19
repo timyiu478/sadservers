@@ -66,3 +66,4 @@ This repository is a collection of troubleshooting notes for server issues encou
 | [Bharuch: "Lost in Translation"](notes/lost_in_translation.md) | `Container`, `CPU Architecture`, `Emulator` |
 | ["Quito": Control One Container from Another](notes/control_one_container_from_another.md) | `Container`, `Mount` |
 | ["Budapest": User Creation](notes/user_creation.md) | `Bash` |
+| ["Tokelau": Delete from history](notes/delete_from_history.md) | `Bash` |
