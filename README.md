@@ -68,4 +68,4 @@ This repository is a collection of troubleshooting notes for server issues encou
 | 58 | ["Quito": Control One Container from Another](notes/control_one_container_from_another.md) | `Container`, `Mount` |
 | 59 | ["Budapest": User Creation](notes/user_creation.md) | `Bash` |
 | 60 | ["Tokelau": Delete from history](notes/delete_from_history.md) | `Bash` |
-| 61 | ["Zaragoza": Test changing critical files](notes/testing_change_critical_files.md.md) | `Mount` |
+| 61 | ["Zaragoza": Test changing critical files](notes/testing_change_critical_files.md) | `Mount` |
