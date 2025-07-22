@@ -67,3 +67,5 @@ This repository is a collection of troubleshooting notes for server issues encou
 | ["Quito": Control One Container from Another](notes/control_one_container_from_another.md) | `Container`, `Mount` |
 | ["Budapest": User Creation](notes/user_creation.md) | `Bash` |
 | ["Tokelau": Delete from history](notes/delete_from_history.md) | `Bash` |
+| ["Zaragoza": Test changing critical files](notes/test_changing_critical_files.md) | `File System` |
+| ["Fukuoka": Forbidden Association](notes/forbidden_association.md) | `Nginx` |
