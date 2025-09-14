@@ -73,4 +73,4 @@ This repository is a collection of troubleshooting notes for server issues encou
 | 63 | ["Poznań": Helm Chart Issue in Kubernetes](notes/helm_chart_k8s.md) | `Helm`, `Kubernetes` |
 | 64 | ["Bizerte": The Slow Application](notes/slow_app.md) | `Performance`, `Redis`, `Cache` |
 | 65 | ["Ruaka": Kubernetes pod in distress](notes/k8s_pod_in_distress.md) | `Kubernetes`, `Helm` |
-| 66 | ["Campina Grande": Give me my cert, Vault](notes/issue_cert_using_hc_vault.md) | `Hashicorp Vault`, `PKI`, `TODO` |
+| 66 | ["Campina Grande": Give me my cert, Vault](notes/issue_cert_using_hc_vault.md) | `Hashicorp Vault`, `PKI` |
