@@ -115,11 +115,13 @@ admin@i-0fa65992103fea071:~$ kubectl logs ruaka-c64f8549c-phjmk
 
 tried to add the `5` initialDelaySeconds of the probes and found the pod also needs more time to load its configurations.
 
+```
 admin@i-0fa65992103fea071:~$ kubectl logs ruaka-c64f8549c-phjmk
 2025-09-14 01:37:58 connecting to the database...
 2025-09-14 01:37:59 connected to database.
 2025-09-14 01:37:59 listening on port :3333.
-2025-09-14 01:38:05 load server configurations...
+2025-09-14 01:38:05 load server configurations... // <--- takes time
+```
 
 #### 6. change initialDelaySeconds to 20 seconds
 
