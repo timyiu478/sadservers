@@ -70,3 +70,6 @@ This repository is a collection of troubleshooting notes for server issues encou
 | 60 | ["Tokelau": Delete from history](notes/delete_from_history.md) | `Bash` |
 | 61 | ["Zaragoza": Test changing critical files](notes/testing_change_critical_files.md) | `Mount` |
 | 62 | ["Fukuoka": Forbidden Association](notes/forbidden_association.md) | `Nginx` |
+| 63 | ["Poznań": Helm Chart Issue in Kubernetes](notes/helm_chart_k8s.md) | `Helm`, `Kubernetes` |
+| 64 | ["Bizerte": The Slow Application](notes/slow_app.md) | `Performance`, `Redis`, `Cache` |
+| 65 | ["Ruaka": Kubernetes pod in distress](notes/k8s_pod_in_distress.md) | `Kubernetes`, `Helm` |
