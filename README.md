@@ -76,4 +76,6 @@ This repository is a collection of troubleshooting notes for server issues encou
 | 66 | ["Campina Grande": Give me my cert, Vault](notes/issue_cert_using_hc_vault.md) | `Hashicorp Vault`, `PKI` |
 | 67 | [Kampot: "A New Port"](notes/a_new_port.md) | `Nginx` |
 | 68 | ["Kampala": Strange Script Error](notes/strange_script_error.md) | `Dos2Unix` |
-| 69 | ["Bondo": Split my pile!](notes/split_my_pile.md) | `Disk`, `Inode` |
+| 69 | ["Bondo: Split my pile!](notes/split_my_pile.md) | `Disk`, `Inode` |
+| 70 | ["Atlantis": Not found](notes/not_found.md) | `Multi-Stage Build`, `C library` |
+| 71 | ["Amygdala": Do you have enough insight to see the secrets?](notes/insight_to_see_secret.md) | `Kubernetes`, `Vault` |
